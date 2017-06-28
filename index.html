@@ -20,6 +20,20 @@
 ***********************************************/
 
 </script>
+$(document).ready(function() {
+	$.ajax({
+        url: 'https://pushcrew.com/api/v1/subscribers/5550ff32fb0c8cb7b553c28c71df84c9/segments',
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("Authorization", "Basic c9c6b1d4b8398b3e07fda664aacf203c")
+        }, success: function(data){
+            alert(data);
+            //process the JSON data etc
+        }
+	});
+});
+<script>
+	
+</script>
 	
 <script type="text/javascript">
     (function(p,u,s,h){
